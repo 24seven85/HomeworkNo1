@@ -7,13 +7,21 @@
 
 import Foundation
 
-// Даны катеты прямоугольного треугольника. Найти площадь, периметр и гипотенузу треугольника.
-let katet1: Double = 4
-let katet2: Double = 3
-let hypotenuse = sqrt((katet1 * katet1) + (katet2 * katet2))
-let perimeter = katet1 + katet2 + hypotenuse
-let square = katet1 * katet2 / 2
-print("Гипотенуза равна ", hypotenuse)
-print("Периметр равен ", perimeter)
-print("Площадь радна ", square)
+// Пользователь вводит сумму вклада в банк и годовой процент. Найти сумму вклада через 5 лет.
+let deposit: Double = 100
+let percentPerYear: Double = 10
+let percent = percentPerYear / 100
+let year1 = deposit + (deposit * percent)
+let year2 = year1 + (year1 * percent)
+let year3 = year2 + (year2 * percent)
+let year4 = year3 + (year3 * percent)
+let year5 = year4 + (year4 * percent)
+
+print("Через 5 лет сумма вклада будет ", year5)
+
+
+
+
+
+
 
